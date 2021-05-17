@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>TinDog</title>
+
+  <!-- CSS stylesheets -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- the link below is font-awesome to coonect it from anywhere to show the icon -->
+  <!-- Font Awesome -->
+  <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+
+
+  <!-- style of Montserrat and Ubuntu is not working -->
+  <!-- google fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Ubuntu:wght@700&display=swap" rel="stylesheet">
+
+
+  <!-- neither js nor jquery are working for buttom -->
+  <!-- Bootstrap   Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
+
+
+
+</head>
+
+<body>
+
+  <section  id="title">
+    <div class="container-fluid">
+
+
+
+      <!-- Nav Bar -->
+      <nav class="navbar  navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="">Tindog</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#footer">Contact</a>
+              <!-- as in href we give value #(for id) and since by clicking on contact user goes to footer section directly for that we write #footer in href. -->
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#pricing">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#cta">Download</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <!-- Title -->
+
+      <div class="row">
+        <div class="col-lg-6">
+          <h1 class="big-heading">Meet new and good dogs nearby.</h1>
+          <button type="button" class="btn btn-dark btn-lg download-button"><i class="fab fa-apple"></i> Download</button>
+          <!--  class="fab fa-apple" must not insert between the class of button type.bcoz it is separate  piece of text that belong between the element tag -->
+
+          <!-- as i is the shortest html tag thats its used in the fab (by font awesome). Wherever i want to link icon i just have
+           to paste this link to there as we have already paste the link of font awesome cdn in head section. so it will download the
+            icon and paste the icon Wherever we want -->
+          <button type="button" class="btn btn-outline-light btn-lg download-button"><i class="fab fa-google-play"></i> Download</button>
+        </div>
+
+        <div class="col-lg-6">
+          <img class="title-image" src="images/iphone6.png" alt="iphone-mockup">
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+
+  <!-- Features -->
+  <section id="features">
+    <div class="container-fluid">
+
+
+      <div class="row">
+        <div class="feature-box col-lg-4">
+          <i class=" icon fas fa-check-circle fa-4x"></i>
+          <h3 class="feature-title">Easy to use.</h3>
+          <p>So easy to use, even your dog could do it.</p>
+
+        </div>
+
+        <div class="feature-box col-lg-4">
+          <i class=" icon fas fa-bullseye fa-4x"></i>
+          <h3 class="feature-title">Elite Clientele</h3>
+          <p>We have all the dogs, the greatest dogs.</p>
+        </div>
+
+        <div class="feature-box col-lg-4">
+          <i class="  icon fas fa-heart fa-4x"></i>
+          <!-- fa-4x means that fa stands for font-awesome and 4x stands for 4 times larger than normal or default icons and since it is class
+                                                        we write inside of class of i tag element only. -->
+          <h3 class="feature-title">Guaranteed to work.</h3>
+          <p>Find the love of your dog's life or your money back.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Testimonials -->
+
+  <section id="testimonials">
+    <div id="testimonial-carousel" class="carousel slide" data-bs-ride="false">
+      <!--id should be unique across the page . next we add custom bootstrap classes carousel which says this div is carusel &
+                                                                                    slide tells that rather than just appear it slide from right or left and data-bs-ride="false" means that it doesnt auto-play.-->
+      <div class="carousel-inner">
+        <!--this div containes the contents item which is going to carousel items so that slides can be changed .  -->
+        <div class="carousel-item active container-fluid">
+          <!--as here inside carousel-inner we got 3 carousel-items which is gonna be slide as first slide,second-slide and third slide.-->
+          <!--the first slide which you gonna put first as we gonna load up the page then the first slide or 1st page which shows for that we have to give active class ( in class element as here class="carousel-item active" )-->
+          <!-- <img src="..." class="d-block w-100" alt="first slide"> -->
+          <!--here it is image we can change it from h1 tag , it really doesnot matter. we can do like  <h1>hello</h1> -->
+          <h2 class="testimonial-text">I no longer have to sniff other dogs for love. I've found the hottest Corgi on TinDog. Woof.</h2>
+          <img class="testimonial-image" src="images/dog-img.jpg" alt="dog-profile">
+          <em>Pebbles, New York</em>
+        </div>
+        <div class="carousel-item container-fluid">
+          <!--we use inline style bcoz of distinguish all the slide from 1st,2nd and 3rd slide as style="background-color:yellow"-->
+          <!-- <img src="..." class="d-block w-100" alt="second slide"> -->
+          <h2 class="testimonial-text">My dog used to be so lonely, but with TinDog's help, they've found the love of their life. I think.</h2>
+          <img class="testimonial-image" src="images/lady-img.jpg" alt="lady-profile">
+          <em>Beverly, Illinois</em>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#testimonial-carousel" data-bs-slide="prev">
+        <!--we have two buttons first is carousel-control-prev and second is carousel-control-next  and carousel-control-prev is used for left side button  -->
+        <!--type is used as button for the button we can give type if instead of button tag h1 tag is used then there type=" button "is important as it change
+   the h1 tag to button tag <h1 class="...." type="button" data-bs-targt="...." data-bs-slide="prev/next"> and data-bs-target means that which carousel items
+   should be target for changing the slides by button.-->
+        <!--data-bs-target value should be same as the id values in the starting div as per value we give "testimonial-carousel".-->
+        <!--data-bs-slide="prev" says direction to which your slides should slive here it says backward..-->
+
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <!--this line shows the icon of previous button on display by adding bootstrap class like carousel-control-prev-icon -->
+        <!--aria-hidden="true" means that make the screen reader to skip the are of button . as screen reader is used by visually problem (as blind) people to read all on the screen
+    like previous /next button and we dont want to read button so we hide it from screen reader .-->
+        <span class="visually-hidden">Previous</span>
+        <!--for visually problem person we use visually-hidden class and Previous so that screen reader read instead of previous control button only read Previous.-->
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#testimonial-carousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+
+
+
+
+  </section>
+
+
+  <!-- Press -->
+
+  <section id="press">
+    <img class="press-logo" src="images/techcrunch.png" alt="tc-logo">
+    <img class="press-logo" src="images/tnw.png" alt="tnw-logo">
+    <img class="press-logo" src="images/bizinsider.png" alt="biz-insider-logo">
+    <img class="press-logo" src="images/mashable.png" alt="mashable-logo">
+
+  </section>
+
+
+  <!-- Pricing -->
+
+  <section id="pricing">
+
+    <h2 class="section-heading">A Plan for Every Dog's Needs</h2>
+    <p>Simple and affordable price plans for your and your dog.</p>
+
+
+
+    <div class="row">
+      <!--card group class used for covering all the card in a proper manner or table -->
+      <div class="pricing-column col-lg-4 col-md-6">
+
+
+        <div class="card">
+          <!-- A card is a flexible and extensible content container. It includes options for headers and footers, -->
+          <!-- a wide variety of content, contextual background colors, and powerful display options.  -->
+          <!--card class  after used :- It looks as a box with borders and light padding around the text, images, links, or other content you place inside. .-->
+          <div class="card-header">
+            <h3>Chihuahua</h3>
+          </div>
+          <div class="card-body">
+            <h2 class="price-text">Free</h2>
+            <p>5 Matches Per Day</p>
+            <p>10 Messages Per Day</p>
+            <p>Unlimited App Usage</p>
+
+            <div class="d-grid gap-2">
+              <button type="button" class="btn btn-outline-primary btn-lg ">Sign Up</button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="pricing-column col-lg-4 col-md-6">
+        <div class="card">
+          <div class="card-header">
+            <h3>Labrador</h3>
+          </div>
+          <div class="card-body">
+            <h2 class="price-text">$49 / mo</h2>
+            <p>Unlimited Matches</p>
+            <p>Unlimited Messages</p>
+            <p>Unlimited App Usage</p>
+
+            <div class="d-grid gap-2">
+              <button type="button" class="btn btn-primary btn-lg ">Sign Up</button>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+      <div class="pricing-column col-lg-4 ">
+        <div class="card">
+
+
+          <div class="card-header">
+            <h3>Mastiff</h3>
+          </div>
+          <div class="card-body">
+            <h2 class="price-text">$99 / mo</h2>
+            <p>Pirority Listing</p>
+            <p>Unlimited Matches</p>
+            <p>Unlimited Messages</p>
+            <p>Unlimited App Usage</p>
+            <div class="d-grid gap-2">
+              <!-- d-grid gap-2 used for Create responsive stacks of full-width, “block buttons” -->
+              <button type="button" class="btn btn-primary btn-lg ">Sign Up</button>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+
+    </div>
+  </section>
+
+
+  <!-- Call to Action -->
+
+  <section id="cta">
+
+      <h3 class="big-heading">Find the True Love of Your Dog's Life Today.</h3>
+      <button type="button" class="btn btn-dark btn-lg download-button"><i class="fab fa-apple"></i>Download</button>
+      <button type="button" class="btn btn-outline-light btn-lg download-button"><i class="fab fa-google-play"></i>Download</button>
+
+  </section>
+
+
+  <!-- Footer -->
+
+  <footer id="footer">
+    <div class="container-fluid">
+
+      <i class="icons fab fa-twitter"></i>
+      <i class="icons fab fa-facebook-f"></i>
+      <i class="icons fab fa-instagram"></i>
+      <i class="icons fas fa-envelope"></i>
+
+      <p>© Copyright 2018 TinDog</p>
+
+    </div>
+  </footer>
+
+
+</body>
+
+</html>

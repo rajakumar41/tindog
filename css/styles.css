@@ -1,0 +1,194 @@
+
+body{
+  font-family: "Montserrat";
+  text-align:center;
+}
+h1,h2,h3,h4,h5,h6{
+  font-family: "Montserrat";
+  font-weight: bold;
+
+}
+
+p{
+  color:#8f8f8f;
+}
+
+/* containers */
+
+.container-fluid{
+  padding:7% 15%;
+}
+
+
+
+/* headings */
+.big-heading{
+  font-family: " Montserrat-Black";
+  font-size:3.5rem;
+  line-height: 1.5;
+}
+.section-heading{
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+/* navigation bar */
+
+.navbar{
+  padding:0 0 4.5rem;
+}
+
+.navbar-brand{
+  font-family: "Ubuntu";
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.navbar-nav{
+  margin-left:auto;
+}
+
+.nav-item{
+  padding:0 18px;
+}
+
+.nav-link{
+  font-size: 1.2rem;
+  font-family: "Montserrat-light";
+}
+
+/* download-button */
+
+.download-button{
+  margin:5% 3% 5% 0;
+}
+
+/* title-section */
+#title{
+  background-color: #ff4c68;
+  color: #fff;
+  text-align: left;
+}
+#title .container-fluid{  /*this indicate that only change container-fluid which is inside the something which contains id of title */
+                            /* syntax is selector1 selector2{
+                                          } */
+                            /* this is called Hierarchical Selectors. and hierarchi should read from right to left .
+                            for eg: div .title{ color:red; } that means the element which has class title that is inside of parent
+                           div that should be of colr red. here div is parent and title class is child.*/
+  padding:3% 15% 7%;
+}
+/*  when there is no space between two selectors then it is called combined selector and it is read from left to right. and when there is space
+then it is called Hierarchical selectors.
+syntax of combined selectors is:-:  selector1#selector2 {    }  or selector1.selector2{    } but they have to all occur in the same element */
+/* title image */
+
+.title-image{
+  width:18.5%;
+  /*60% */
+  transform:rotate(25deg);
+  position: absolute;
+  right:25%;
+/* 30% */
+}
+
+/* feature section */
+#features{
+  padding:7% 15%;
+  background-color: #fff;
+  position: relative;
+  z-index: 1;
+}
+
+.feature-box{
+  padding:5%;
+}
+.feature-title{
+  font-size: 1.5rem;
+}
+
+ .icon{
+   color:#ef8172;
+   margin-bottom:1rem;
+ }
+.icon:hover{
+  color:#ff4c68;
+}
+
+/* testimonial Section */
+#testimonials{
+  background-color: #ef8172;
+  color:#fff;
+}
+
+.testimonial-text{
+  font-size: 3rem;
+  line-height: 1.5;
+}
+.testimonial-image{
+  width:10%;
+  border-radius: 100%;
+  margin:20px;
+}
+
+.carousel-item{
+  padding:7% 15%;
+}
+
+#press{
+  background-color: #ef8172;
+  padding-bottom:3rem;
+}
+.press-logo{
+  width:15%;
+  margin:20px 20px 50px;
+}
+
+/* pricing section */
+
+#pricing{
+  padding:100px;
+}
+.price-text{
+  font-size:3rem;
+  line-height:1.5;
+}
+.pricing-column{
+  padding:3% 2%;
+}
+
+/*syntax of Media Query
+ @media <type> <feature>
+ for eg:- @media screen(min-width:900px){
+   //Change Something
+ }
+ here feature is min-width:900px and type is screen.*/
+@media (max-width:1028px){
+  #title{
+    text-align: center;
+
+  }
+  .title-image{
+    position: static;
+    transform: rotate(0);
+    width:60%;
+  }
+}
+
+/* cta Section */
+#cta{
+  background-color: #ff4c68;
+  color: #fff;
+  padding:3% 22%;
+  /* padding:7% 15%;  */
+}
+
+
+/* footer Section */
+#footer{
+  background-color: #fff;
+  padding:7% 15%;
+}
+.icons{
+  margin: 20px 10px;
+
+}
